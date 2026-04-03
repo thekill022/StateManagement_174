@@ -45,6 +45,12 @@ class _FormPageState extends State<FormPage> {
               ),
             ),
             SizedBox(height: 20,),
+
+            ElevatedButton(
+                onPressed: submitData,
+                child: Text("Submit")
+            ),
+            SizedBox(height: 10,),
           ],
         ),
       ),

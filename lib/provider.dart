@@ -59,6 +59,6 @@ class FormPage extends StatelessWidget {
           ],
         ),
       ),
-    )
+    );
   }
 }

@@ -58,7 +58,11 @@ class FormPage extends StatelessWidget {
                         );
                       },
                       child: Text("Submit")
-                  )
+                  ),
+                  SizedBox(height: 10,),
+
+                  Text("Nama : ${state.nama}"),
+                  Text("Email : ${state.email}"),
                 ],
               );
             }

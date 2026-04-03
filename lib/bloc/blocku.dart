@@ -39,6 +39,23 @@ class FormPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Form bloc'),),
+      body: Padding(
+          padding: EdgeInsets.all(16),
+        child: BlocBuilder<FormBloc, FormState>(
+            builder: (context, state) {
+              return Column(
+                children: [
+                  TextField(
+                    onChanged: (value) => context.read<FormBloc>().add(NamaChanged(value)),
+                  ),
+                  TextField(
+                    onChanged: (value) => context.read<FormBloc>().add(EmailChanged(value)),
+                  ),
+                ],
+              );
+            }
+        ),
+      ),
     );
   }
 }

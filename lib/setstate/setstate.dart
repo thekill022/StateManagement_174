@@ -50,7 +50,12 @@ class _FormPageState extends State<FormPage> {
                 onPressed: submitData,
                 child: Text("Submit")
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 20,),
+
+            Text(
+              hasil,
+              style: TextStyle(fontSize: 16),
+            )
           ],
         ),
       ),

@@ -48,7 +48,14 @@ class FormPage extends StatelessWidget {
                     SnackBar(content: Text("Submit sukses!"))
                   );
                 },
-                child: Text("Submit"))
+                child: Text("Submit")
+            ),
+            SizedBox(
+              height: 10,
+            ),
+
+            Text("Nama : ${form.nama}"),
+            Text("Email : ${form.email}"),
           ],
         ),
       ),

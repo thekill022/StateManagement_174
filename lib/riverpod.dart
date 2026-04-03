@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:statemanagement_174/main.dart';
 
-class FormPage extends ConsumerWidget {
+class FormPage2 extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

@@ -19,7 +19,7 @@ class FormProvider extends ChangeNotifier {
 
 }
 
-class FormPage extends StatelessWidget {
+class FormPage1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {

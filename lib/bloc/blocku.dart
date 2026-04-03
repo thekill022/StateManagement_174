@@ -51,6 +51,14 @@ class FormPage extends StatelessWidget {
                   TextField(
                     onChanged: (value) => context.read<FormBloc>().add(EmailChanged(value)),
                   ),
+                  ElevatedButton(
+                      onPressed: (){
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text("Submit Sukses!"))
+                        );
+                      },
+                      child: Text("Submit")
+                  )
                 ],
               );
             }

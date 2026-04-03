@@ -17,7 +17,14 @@ class FormPage extends ConsumerWidget {
           padding: EdgeInsets.all(16),
         child: Column(
           children: [
-
+            TextField(
+              decoration: InputDecoration(labelText: "Nama",),
+              onChanged: (value) => ref.read(namaProvider.notifier).state = value,
+            ),
+            TextField(
+              decoration: InputDecoration(labelText: "Email",),
+              onChanged: (value) => ref.read(emailProvider.notifier).state = value,
+            ),
           ],
         ),
       ),

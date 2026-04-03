@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class FormProvider extends ChangeNotifier {
   String nama = "";
@@ -14,4 +15,14 @@ class FormProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+}
+
+class FormPage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+
+    )
+  }
 }

@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class FormEvent{}
@@ -30,3 +32,14 @@ class FormBloc extends Bloc<FormEvent, FormState> {
     });
   }
 }
+
+class FormPage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Form bloc'),),
+    );
+  }
+}
+

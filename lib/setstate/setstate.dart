@@ -12,6 +12,8 @@ class _FormPageState extends State<FormPage> {
   final TextEditingController namaController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
 
+  String hasil = "";
+
   @override
   Widget build(BuildContext context) {
     return const Placeholder();

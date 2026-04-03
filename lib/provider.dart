@@ -1,5 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class FormProvider extends ChangeNotifier {
   String nama = "";
@@ -18,10 +20,29 @@ class FormProvider extends ChangeNotifier {
 }
 
 class FormPage extends StatelessWidget {
-  const FormPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+
+    final form = Provider.of<FormProvider>(context);
+
+    return Scaffold(
+      appBar: AppBar(title: Text("Form Provider"),),
+      body: Padding(
+          padding: EdgeInsets.all(16),
+        child: Column(
+          children: [
+            TextField(
+              decoration: InputDecoration(labelText: "Nama"),
+              onChanged: form.setNama,
+            ),
+            TextField(
+              decoration: InputDecoration(labelText: "email"),
+              onChanged: form.setEmail,
+            ),
+          ],
+        ),
+      ),
+    )
   }
 }

@@ -40,6 +40,15 @@ class FormPage extends StatelessWidget {
               decoration: InputDecoration(labelText: "email"),
               onChanged: form.setEmail,
             ),
+            SizedBox(height: 20,),
+
+            ElevatedButton(
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text("Submit sukses!"))
+                  );
+                },
+                child: Text("Submit"))
           ],
         ),
       ),
